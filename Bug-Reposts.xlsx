@@ -1,0 +1,47 @@
+🐞 BUG_001
+Title: Search allows special characters without validation
+Module: Search
+Steps: Open site → Enter @#$% → Click search
+Expected Result: System should validate input or show meaningful message
+Actual Result: Irrelevant/blank results displayed
+Severity: Medium
+Priority: Medium
+🐞 BUG_002
+Title: Multiple clicks on Add to Cart increases quantity unexpectedly
+Module: Cart
+Steps: Click “Add to Cart” multiple times quickly
+Expected Result: System should handle duplicate clicks properly
+Actual Result: Quantity increases inconsistently
+Severity: High
+Priority: High
+🐞 BUG_003
+Title: No message for empty cart checkout
+Module: Checkout
+Steps: Try checkout with empty cart
+Expected Result: “Cart is empty” message displayed
+Actual Result: No clear message shown
+Severity: Medium
+Priority: High
+🐞 BUG_004
+Title: Invalid email format not properly validated
+Module: Authentication
+Steps: Enter email like abc@ → Submit
+Expected Result: Validation error should appear
+Actual Result: Weak or no validation
+Severity: High
+Priority: High
+🐞 BUG_005
+Title: Product images load slowly
+Module: Product Page
+Steps: Open product page
+Expected Result: Images should load quickly
+Actual Result: Images take noticeable time
+Severity: Low
+Priority: Medium
+💥 Optional 
+🐞 BUG_006
+Title: Cart not updating after refresh
+Module: Cart
+🐞 BUG_007
+Title: Session not expired after long inactivity
+Module: Authentication

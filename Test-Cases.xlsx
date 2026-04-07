@@ -1,0 +1,138 @@
+
+🟢 AUTHENTICATION
+TC_001
+Module: Authentication
+Description: Verify login with valid credentials
+Preconditions: User account exists
+Steps: Open site → Click login → Enter valid email & password → Submit
+Expected Result: User should login successfully
+
+TC_002
+Description: Verify error for invalid password
+Steps: Enter valid email + wrong password
+Expected Result: Error message displayed
+
+TC_003
+Description: Verify login with empty fields
+Steps: Leave fields empty → Click login
+Expected Result: Validation message shown
+
+TC_004
+Description: Verify password is masked
+Steps: Enter password in field
+Expected Result: Password should not be visible
+
+TC_005
+Description: Verify login with invalid email format
+Steps: Enter invalid email (abc@)
+Expected Result: Validation error displayed
+
+🔵 SEARCH
+
+TC_006
+Description: Verify search with valid product
+Steps: Enter product name → Search
+Expected Result: Relevant products displayed
+
+TC_007
+Description: Verify search with invalid keyword
+Steps: Enter random text
+Expected Result: No results / message displayed
+
+TC_008
+Description: Verify search with special characters
+Steps: Enter @#$%
+Expected Result: System handles input properly
+
+TC_009
+Description: Verify auto-suggestions
+Steps: Start typing product
+Expected Result: Suggestions appear
+
+TC_010
+Description: Verify search with long input string
+Steps: Enter long text
+Expected Result: System handles without crash
+
+🟣 PRODUCT PAGE
+
+TC_011
+Description: Verify product details displayed
+Steps: Open product page
+Expected Result: Name, price, description visible
+
+TC_012
+Description: Verify product images load
+Steps: Open product page
+Expected Result: Images display properly
+
+TC_013
+Description: Verify product availability
+Steps: Check product stock
+Expected Result: Availability shown correctly
+
+🟠 CART
+
+TC_014
+Description: Verify add to cart
+Steps: Click “Add to Cart”
+Expected Result: Product added to cart
+
+TC_015
+Description: Verify remove from cart
+Steps: Remove item
+Expected Result: Item removed successfully
+
+TC_016
+Description: Verify quantity update
+Steps: Increase/decrease quantity
+Expected Result: Cart updates correctly
+
+TC_017
+Description: Verify cart after refresh
+Steps: Add item → Refresh page
+Expected Result: Cart retains items
+
+TC_018
+Description: Verify multiple clicks on add to cart
+Steps: Click add button multiple times
+Expected Result: Proper quantity handling
+
+🔴 CHECKOUT
+
+TC_019
+Description: Verify checkout process
+Steps: Go to checkout
+Expected Result: Checkout page loads
+
+TC_020
+Description: Verify checkout without login
+Steps: Try checkout as guest
+Expected Result: Prompt to login/signup
+
+TC_021
+Description: Verify empty cart checkout
+Steps: Go to checkout with no items
+Expected Result: Proper message displayed
+
+TC_022
+Description: Verify order summary
+Steps: View summary page
+Expected Result: Correct details shown
+
+⚫ ADVANCED 
+
+TC_023
+Description: Verify session timeout
+Steps: Stay inactive → Try action
+Expected Result: Session expired message
+
+TC_024
+Description: Verify behavior on slow internet
+Steps: Simulate slow network
+Expected Result: System handles gracefully
+
+TC_025
+Description: Verify cart consistency across devices
+Steps: Login on 2 devices → Modify cart
+Expected Result: Cart syncs correctly

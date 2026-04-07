@@ -1,0 +1,36 @@
+
+
+| TS_001 | Authentication | Verify user can login with valid credentials |
+| TS_002 | Authentication | Verify error message for invalid password |
+| TS_003 | Authentication | Verify login with empty fields |
+| TS_004 | Authentication | Verify password is masked |
+
+
+| TS_005 | Search | Verify search with valid product name |
+| TS_006 | Search | Verify search with invalid keyword |
+| TS_007 | Search | Verify search with special characters |
+| TS_008 | Search | Verify auto-suggestions appear |
+
+
+
+| TS_009 | Product Page | Verify product details are displayed |
+| TS_010 | Product Page | Verify product images load properly |
+
+
+
+| TS_011 | Cart | Verify user can add product to cart |
+| TS_012 | Cart | Verify user can remove product from cart |
+| TS_013 | Cart | Verify cart updates quantity correctly |
+
+
+
+| TS_014 | Checkout | Verify user can proceed to checkout |
+| TS_015 | Checkout | Verify checkout without login |
+| TS_016 | Checkout | Verify order summary is correct |
+
+
+
+| TS_017 | Cart | Verify multiple clicks on “Add to Cart” |
+| TS_018 | Checkout | Verify behavior on slow internet |
+| TS_019 | Authentication | Verify session timeout |
+| TS_020 | Search | Verify search with long input string |
